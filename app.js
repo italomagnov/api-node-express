@@ -12,5 +12,5 @@ app.put('/api/users/:id', userController.updateUser);
 app.delete('/api/users/:id', userController.deleteUser);
 
 app.listen({
-    port: port,
+    port: process.env.PORT || 3333,
 });
